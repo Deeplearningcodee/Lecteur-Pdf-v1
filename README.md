@@ -3,7 +3,7 @@ Poppler est une bibliothèque open source pour le rendu de fichiers PDF. Il est 
 
 # Sous Windows
 Téléchargez le fichier d'installation de Poppler à partir de la page de téléchargement officielle : https://blog.alivate.com.au/poppler-windows/
-Exécutez le fichier d'installation et suivez les instructions à l'écran pour installer Poppler.
+
 
 Ajoutez le chemin d'installation de Poppler à la variable d'environnement PATH de votre système pour que le lecteur PDF puisse le trouver. Pour cela, cliquez avec le bouton droit sur "Ce PC" -> "Propriétés" -> "Paramètres système avancés" -> "Variables d'environnement" -> dans la section "Variables système", cherchez la variable PATH -> cliquez sur "Modifier" -> ajoutez le chemin d'installation de Poppler (par exemple, C:\Program Files (x86)\Poppler\bin) à la fin de la ligne -> cliquez sur "OK" pour enregistrer les modifications.
 # Sous Linux
