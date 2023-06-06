@@ -1,0 +1,9 @@
+PyQt5
+pdf2image
+pdf2docx
+docx2pdf
+pdfminer.six
+PyPDF2
+Pillow
+fitz
+PyMuPDF
