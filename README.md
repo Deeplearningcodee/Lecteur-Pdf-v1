@@ -1,27 +1,29 @@
-# Comment installer Poppler
-Poppler est une bibliothèque open source pour le rendu de fichiers PDF. Il est utilisé par notre lecteur PDF pour afficher les fichiers PDF. Voici comment l'installer sur différents systèmes d'exploitation :
+# Project Execution Demonstration
+In this section, we will review the necessary steps to clone, install, and run the project.
 
-# Sous Windows
-Téléchargez le fichier d'installation de Poppler à partir de la page de téléchargement officielle : https://blog.alivate.com.au/poppler-windows/
+## Step 1: Cloning from GitHub
+The first step to get the project is to clone it from its GitHub repository. To do this, use the `git clone` command followed by the repository URL.
 
+git clone https://github.com/Deeplearningcodee/Lecteur-Pdf-v1.git
 
-Ajoutez le dossier bin de Poppler à la variable d'environnement PATH de votre système pour que le lecteur PDF puisse le trouver. Pour cela, cliquez avec le bouton droit sur "Ce PC" -> "Propriétés" -> "Paramètres système avancés" -> "Variables d'environnement" -> dans la section "Variables système", cherchez la variable PATH -> cliquez sur "Modifier" -> ajoutez le chemin d'installation de Poppler (par exemple, C:\Program Files (x86)\Poppler\bin) à la fin de la ligne -> cliquez sur "OK" pour enregistrer les modifications.
-# Sous Linux
-Ouvrez le terminal et exécutez la commande suivante pour installer Poppler :
+After running this command, you should have a local copy of the repository on your machine.
 
-sudo apt-get install poppler-utils
+## Step 2: Installing dependencies
+Once you have cloned the project, the next step is to install the necessary dependencies. These dependencies are listed in the `requirements.txt` file located at the root of the project.
 
-Si vous utilisez une distribution Linux différente, utilisez le gestionnaire de paquets approprié pour installer Poppler.
-Si vous rencontrez des problèmes pour afficher des fichiers PDF avec notre lecteur PDF, vérifiez que la bibliothèque Poppler est bien installée et que le chemin d'installation est correctement configuré.
-# Sous macOS
-Installez Homebrew, le gestionnaire de paquets pour macOS, en suivant les instructions sur la page officielle : https://brew.sh/index_fr
-Ouvrez le terminal et exécutez la commande suivante pour installer Poppler :
+To install these dependencies, you will need to use pip, the Python package manager. You can do this by running the following command in the terminal:
 
-brew install poppler
+pip install -r requirements.txt
 
-Si vous rencontrez des problèmes pour afficher des fichiers PDF avec notre lecteur PDF, vérifiez que la bibliothèque Poppler est bien installée et que le chemin d'installation est correctement configuré.
-Nous espérons que ces instructions vous aideront à installer Poppler avec succès sur votre système d'exploitation et à utiliser notre lecteur PDF sans problème. Si vous rencontrez des problèmes lors de l'installation ou de l'utilisation, n'hésitez pas à nous contacter pour obtenir de l'aide.
+This command tells pip to read the `requirements.txt` file and install all the packages listed there. Make sure you are in the same directory as the `requirements.txt` file when you run this command, otherwise pip will not be able to find the file.
 
+Once you have run this command, pip will start installing the dependencies. This can take a few minutes, depending on the number of dependencies to install and the speed of your internet connection.
 
+## Step 3: Running the project
+Now that the project is installed and configured, we can run it. To do this, navigate to the project directory in your terminal and run the `main.py` file with Python.
 
+cd path/to/project
+python main.py
+
+After executing these commands, you should see the project running.
 
